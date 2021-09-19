@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'quicksand', sans-serif;
+     box-sizing: border-box;
+ }
+
+ body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+  }
+
+ /* Navbar */
+
+ .navbar {
+     padding: 20px 10px !important;
+     background: #131313;
+ }
+
+ .navbar-brand {
+     font-weight: 700;
+     font-family: 'Quicksand', sans-serif;
+ }
+
+ #navbarNav > ul > li:nth-child(n) > a {
+     opacity: 65%;
+     font-family: 'Fredoka One', sans-serif;
+     transition: 0.4s ease;
+ }
+ 
+ #navbarNav > ul > li:nth-child(n) > a:hover {
+     opacity: 100%;
+ }
+
+ #navbarNav > ul > li:nth-child(2) > a {
+     margin-left: 1rem;
+ }
+
+ .season {
+    font-size: 70%; 
+    position: absolute; 
+    top: 35%; 
+    margin-left: 0.1rem; 
+    font-family: 'Quicksand';
+ }
+
+ /* Banner */
+
+ .content-banner {
+    color: #ffffff;
+    background-image: url(./img/banner.png);
+    min-height: 400px;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 125px;
+  }
+  
+  .content-banner:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.7);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .content-banner .first-title {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.2;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    z-index: 2;
+    margin: 0px 0px 12px;
+    margin-top: 3.5%;
+  }
+
+  #waves {
+    position: relative;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 600px) {
+    #waves {
+        margin-top: 112px !important;
+    }
+}
