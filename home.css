@@ -44,11 +44,20 @@
  #navbarNav > ul > li:nth-child(2) > a {
      margin-left: 1rem;
  }
+ 
+ .navbar-toggler:focus,
+ .navbar-toggler,
+ .navbar-toggler:active,
+ .navbar-toggler-icon:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	border: 0 !important;
+ }
 
  .season {
     font-size: 70%; 
     position: absolute; 
-    top: 35%; 
+    top: 1; 
     margin-left: 0.1rem; 
     font-family: 'Quicksand';
  }
@@ -95,6 +104,10 @@
 
 @media only screen and (max-width: 600px) {
     #waves {
-        margin-top: 112px !important;
+        margin-top: 113px !important;
     }
+	
+	#navbarNav > ul > li:nth-child(2) > a {
+     margin-left: 1px;
+ }
 }
